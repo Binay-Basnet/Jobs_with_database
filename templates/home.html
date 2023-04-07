@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Binay jobs</title>
+    <style>
+      h1{
+        text-align: center;
+        font-family: Roboto;
+        color: red;
+      },
+      h2{
+        font-family: Roboto;
+        color: blue;
+        text-align:center;
+      }
+      .container{
+        max-width: 800px;
+        margin: 0 auto 0 auto;
+      },
+      #banner{
+        height: 300px;
+        width : 100%:
+      }
+    </style>
+    <link         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class ="container">
+      <h1 class="mt-3">{{ company_name }} Careers</h1>
+      <hr>
+      <img class = "img-fluid banner rounded"  src = https://images.unsplash.com/photo-1468971050039-be99497410af?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1032&q=80'>
+      
+    
+    <h2 class = "text-center">About Binay</h2>
+      <hr>
+    <p class="lead"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+      <hr>
+
+    <h2 class = "text-center">About Binay</h2>
+      <hr>
+   <h2 class = "text-center" >Open Positions</h2>
+      <hr>
+      <br>
+   <div style="text-align: center">
+     
+     {% for job in jobs %}
+      {% include 'jobitem.html' %}
+     {% endfor %}
+     
+   </div>
+      <br><hr>
+      <div style="text-align: center">
+<button style="background-color: #4CAF50; color: white; font-size: 16px; padding: 10px 20px;">Contact Us</button>
+      </div>
+
+</div>
+      
+    
+  </body>
+</html>
